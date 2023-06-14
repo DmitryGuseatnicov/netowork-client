@@ -5,3 +5,4 @@ config
 scripts
 node_modules
 config/webpack.config.js
+.storybook
