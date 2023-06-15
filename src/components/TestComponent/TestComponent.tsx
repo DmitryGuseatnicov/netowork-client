@@ -7,9 +7,9 @@ import styles from './TestComponent.module.scss';
 
 const cx = cnBind.bind(styles);
 
-export const TestComponent: React.FC<TestComponentProps> = ({ testProp }) => {
+export const TestComponent: React.FC<TestComponentProps> = ({ testProp, color }) => {
     return (
-        <div className={cx('test-component')}>
+        <div className={cx('test-component')} style={{ color }}>
             <div className={cx('content')}>{testProp ? 'true' : 'false'}</div>
         </div>
     );
