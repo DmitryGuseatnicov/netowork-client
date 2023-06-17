@@ -1,0 +1,41 @@
+@mixin gray-color($bg) {
+  height: 48px;
+  width: 48px;
+  left: 0px;
+  top: 4px;
+  border: 4px solid #ffffff;
+  border-radius: 999px;
+  background-color: $bg;
+}
+
+.gray-0 {
+  @include gray-color(#ffffff);
+}
+
+.gray-20 {
+  @include gray-color(#f9f9fa);
+}
+
+.gray-40 {
+  @include gray-color(#f3f3f5);
+}
+
+.gray-60 {
+  @include gray-color(#ecedf0);
+}
+
+.gray-80 {
+  @include gray-color(#e6e7eb);
+}
+
+.gray-100 {
+  @include gray-color(#e0e1e6);
+}
+
+.gray-120 {
+  @include gray-color(#dadce0);
+}
+
+.gray-140 {
+  @include gray-color(#d4d6db);
+}
