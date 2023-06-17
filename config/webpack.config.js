@@ -174,6 +174,8 @@ const sss = function (webpackEnv) {
             patterns: [
                 // ? if you want to globaly add style files - do it here
                 resolveFromRoot('src', 'assets', 'styles','reset.scss'),
+                resolveFromRoot('src', 'assets', 'styles','mixins.scss'),
+                resolveFromRoot('src', 'assets', 'styles','variables.scss'),
             ],
         },
     

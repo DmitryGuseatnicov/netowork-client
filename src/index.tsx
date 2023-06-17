@@ -7,6 +7,8 @@ import { store } from 'store';
 import reportWebVitals from './reportWebVitals';
 
 import 'assets/styles/reset.scss';
+import 'assets/styles/mixins.scss';
+import 'assets/styles/variables.scss';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
