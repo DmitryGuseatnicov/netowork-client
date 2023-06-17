@@ -168,16 +168,6 @@ const sss = function (webpackEnv) {
           sourceMap: isEnvProduction ? shouldUseSourceMap : isEnvDevelopment,
         },
       },
-      {
-        loader: 'style-resources-loader',
-        options: {
-            patterns: [
-                // ? if you want to globaly add style files - do it here
-                resolveFromRoot('src', 'assets', 'styles','reset.scss'),
-            ],
-        },
-    
-      }
     ].filter(Boolean);
     if (preProcessor) {
       loaders.push(
@@ -193,6 +183,17 @@ const sss = function (webpackEnv) {
           options: {
             sourceMap: true,
           },
+        },
+        {
+          loader: 'style-resources-loader',
+          options: {
+              patterns: [
+                  // ? if you want to globaly add style files - do it here
+                  'src/assets/styles/mixins.scss',
+                  'src/assets/styles/variables.scss'
+              ],
+          },
+      
         }
       );
     }
