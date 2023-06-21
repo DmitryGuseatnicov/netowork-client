@@ -1,7 +1,59 @@
-@mixin h1 () {
+@mixin text-default {
     font-family: 'Lato';
     font-style: normal;
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 110%;
+    font-weight: 400;
+    font-size: 16px;
 }
+
+@mixin sample-text {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+@mixin text-very-big {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 96px;
+    line-height: 120%;
+}
+
+@mixin text-big {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 140%;
+}
+
+
+@mixin flex-centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+$screen-small-max: 360;
+
+@mixin mobile {
+    @media screen and (max-width: #{$screen-small-max}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (min-width: #{$tablet-from}) and (max-width: #{$tablet-to}) {
+        @content;
+    }
+}
+
+@mixin media-max-screen($val) {
+    @media screen and (max-width: #{$val}) {
+        @content;
+    }
+}
+
+
