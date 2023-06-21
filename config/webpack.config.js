@@ -195,6 +195,17 @@ const sss = function (webpackEnv) {
           options: {
             sourceMap: true,
           },
+        },
+        {
+          loader: 'style-resources-loader',
+          options: {
+              patterns: [
+                  // ? if you want to globaly add style files - do it here
+                  'src/assets/styles/mixins.scss',
+                  'src/assets/styles/variables.scss'
+              ],
+          },
+      
         }
       );
     }

@@ -27,7 +27,18 @@ const config: StorybookConfig = {
                   },
                 },
               },
-              'sass-loader'
+              'sass-loader',
+              {
+                loader: 'style-resources-loader',
+                options: {
+                    patterns: [
+                        // ? if you want to global add style files - do it here
+                       'src/assets/styles/mixins.scss',
+                       'src/assets/styles/variables.scss'
+                    ],
+                },
+            
+              }
             ],
           },
         );
