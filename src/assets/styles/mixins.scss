@@ -98,40 +98,100 @@ $screen-small-max: 360;
     letter-spacing: 1px;
 }
 
-// Миксины цветов:
-// Цвета текста:
-@mixin color-text {
+// Миксины текста
+
+@mixin numeric-big {
     font-family: Lato;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0.01em;
-    color: #2c2d2e;
+    font-size: 96px;
+    font-weight: 300;
+    line-height: 115px;
+    letter-spacing: 0px;
 }
 
-@mixin color-text-secondary {
+@mixin numeric-middle {
     font-family: Lato;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0.01em;
-    color: #919399;
+    font-size: 64px;
+    font-weight: 300;
+    line-height: 90px;
+    letter-spacing: 0px;
 }
 
-@mixin color-link {
+@mixin numeric-small {
     font-family: Lato;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0.01em;
-    color: #005bd1;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 45px;
+    letter-spacing: 0px;
 }
 
-@mixin color-link-visited {
+@mixin descriptor-one {
     font-family: Lato;
-    font-size: 20px;
+    font-size: 36px;
     font-weight: 500;
+    line-height: 47px;
+    letter-spacing: 0px;
+}
+
+@mixin descriptor-two {
+    font-family: Lato;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 36px;
+    letter-spacing: 0px;
+}
+
+@mixin text-main {
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0px;
+}
+
+@mixin text-small {
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+}
+
+@mixin button-small {
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+}
+
+@mixin button-plain {
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0px;
+}
+
+@mixin button-big {
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 400;
     line-height: 24px;
-    letter-spacing: 0.01em;
-    color: #528fdf;
+    letter-spacing: 0px;
+}
+
+@mixin field-norm {
+    font-family: Lato;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0px;
+}
+
+@mixin field-small {
+    font-family: Lato;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 13px;
+    letter-spacing: 1px;
 }
