@@ -1,19 +1,19 @@
 @mixin text-default {
-    font-family: 'Lato';
+    font-family: "Lato";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
 }
 
 @mixin sample-text {
-    font-family: 'Lato';
+    font-family: "Lato";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
 }
 
 @mixin text-very-big {
-    font-family: 'Lato';
+    font-family: "Lato";
     font-style: normal;
     font-weight: 300;
     font-size: 96px;
@@ -21,13 +21,12 @@
 }
 
 @mixin text-big {
-    font-family: 'Lato';
+    font-family: "Lato";
     font-style: normal;
     font-weight: 300;
     font-size: 64px;
     line-height: 140%;
 }
-
 
 @mixin flex-centered {
     display: flex;
@@ -56,4 +55,45 @@ $screen-small-max: 360;
     }
 }
 
+// Здесь ниже по тексту мои миксины:
+// Типографика
 
+@mixin title-one {
+    font-family: Lato;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: 0px;
+}
+
+@mixin title-two {
+    font-family: Lato;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: 0px;
+}
+
+@mixin title-three {
+    font-family: Lato;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0px;
+}
+
+@mixin title-four {
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0px;
+}
+
+@mixin title-five {
+    font-family: Lato;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 11px;
+    letter-spacing: 1px;
+}
