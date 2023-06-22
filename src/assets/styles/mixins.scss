@@ -97,3 +97,41 @@ $screen-small-max: 360;
     line-height: 11px;
     letter-spacing: 1px;
 }
+
+// Миксины цветов:
+// Цвета текста:
+@mixin color-text {
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: #2c2d2e;
+}
+
+@mixin color-text-secondary {
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: #919399;
+}
+
+@mixin color-link {
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: #005bd1;
+}
+
+@mixin color-link-visited {
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: #528fdf;
+}
