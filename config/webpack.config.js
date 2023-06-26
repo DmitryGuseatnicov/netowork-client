@@ -168,6 +168,18 @@ const sss = function (webpackEnv) {
           sourceMap: isEnvProduction ? shouldUseSourceMap : isEnvDevelopment,
         },
       },
+      {
+        loader: 'style-resources-loader',
+        options: {
+            patterns: [
+                // ? if you want to globaly add style files - do it here
+                resolveFromRoot('src', 'assets', 'styles','reset.scss'),
+                resolveFromRoot('src', 'assets', 'styles','mixins.scss'),
+                resolveFromRoot('src', 'assets', 'styles','variables.scss'),
+            ],
+        },
+    
+      }
     ].filter(Boolean);
     if (preProcessor) {
       loaders.push(
